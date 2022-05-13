@@ -15,10 +15,11 @@ public class BoccoJacopoClass
 	 */
 	public int boccoMet(int s,int f)
 	{
-		int r=0;
-		for(int i=1;i<f;i++)
+		int r=1;//r parte da 1
+		//i deve partire da s e deve essere minore di f
+		for(int i=s;i<f;i++) //i incrementa
 		{
-			r = r+r;	
+			r =(r*i);	//r deve essere moltiplicato per il valore di i
 		}
 		return r;			
 	}
